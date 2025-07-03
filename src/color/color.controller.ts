@@ -3,7 +3,7 @@ import { ColorService } from './color.service';
 import { Auth } from 'src/auth/decorators/auth.decorator';
 import { ColorDto } from './dto/color.dto';
 
-@Controller('colors')
+@Controller('/colors')
 export class ColorController {
   constructor(private readonly colorService: ColorService) {}
 

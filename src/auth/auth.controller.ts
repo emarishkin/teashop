@@ -5,7 +5,7 @@ import { Request, Response, response } from 'express';
 import { AuthGuard } from '@nestjs/passport';
 
 
-@Controller('auth')
+@Controller('/auth')
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
   

@@ -5,7 +5,7 @@ import { CurrentUser } from 'src/user/decorators/user.decorator';
 import { CreateStoreDto } from './dto/create-store.dto';
 import { UpdateStoreDto } from './dto/update-store.dto';
 
-@Controller('stores')
+@Controller('/stores')
 export class StoreController {
   constructor(private readonly storeService: StoreService) {}
 

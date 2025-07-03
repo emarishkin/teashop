@@ -15,7 +15,7 @@ export class ColorService {
     }
 
     async getById(id:string){
-            const color = await this.prisma.store.findUnique({
+            const color = await this.prisma.color.findUnique({
                 where: {
                     id
                 }

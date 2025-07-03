@@ -94,7 +94,7 @@ export class AuthController {
   @Get('yandex/callback')
   @UseGuards(AuthGuard('yandex'))
   async yandexAuthCallback(
-    @Req() req:any, 
+    @Req() req, 
     @Res({passthrough:true}) res:Response
   ){
     const {refreshToken, ...response} = await this.authService.validateOAuthLogin(req)

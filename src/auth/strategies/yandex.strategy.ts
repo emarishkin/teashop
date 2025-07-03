@@ -20,7 +20,7 @@ export class YandexStrategy extends PassportStrategy(Strategy, 'yandex') {
         _refreshToken: string,
         profile: Profile,
         done: VerifyCallback
-    ) {
+    ):Promise<any> {
         try {
             const { username, emails, photos } = profile;
 
